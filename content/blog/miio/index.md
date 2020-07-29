@@ -1,5 +1,5 @@
 ---
-title: A card game to program your brain
+title: A card game to program your braaaain
 date: "2019-11-01"
 description: This is a custom description for SEO and Open Graph purposes, rather than the default generated excerpt. Simply add a description field to the frontmatter.
 ---
