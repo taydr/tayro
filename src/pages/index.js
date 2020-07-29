@@ -14,7 +14,8 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="All posts" />
+        <p>Hey, this is my site. Giving it a shot.</p>
+        {/* <SEO title="All posts" />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
@@ -40,7 +41,7 @@ class BlogIndex extends React.Component {
               </section>
             </article>
           )
-        })}
+        })} */}
       </Layout>
     )
   }
