@@ -14,9 +14,7 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <p>
-          <strong>Taylor Rogalski</strong>
-        </p>
+        <h2>Taylor Rogalski</h2>
         <p>
           I'm a designer based in San Francisco. I'm interested in how computers
           can help you think better thoughts and live life more fully.
