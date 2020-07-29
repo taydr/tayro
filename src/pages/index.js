@@ -15,17 +15,17 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <p>
-          I'm a designgineer based in San Francisco. I'm interested in how
-          computers can help you think better thoughts and live life more fully.
+          I'm a designer based in San Francisco. I'm interested in how computers
+          can help you think better thoughts and live life more fully.
         </p>
         <p>
-          I attended <a href="http://cca.edu">CCA</a> for
-          <a href="">interaction design</a>, but dropped out in 2013 to join
-          <a href="http://facebook.com">Facebook</a> and work on
-          <a href="">Graph Search</a>.
+          I attended <a href="http://cca.edu">CCA</a> to study{" "}
+          <a href="">interaction design</a>, but dropped out in 2013 to work on{" "}
+          <a href="">Graph Search</a> at{" "}
+          <a href="http://facebook.com">Facebook</a>.
         </p>
         <p>
-          I led design at <a href="http://classdojo.com">ClassDojo</a>
+          I also led design at <a href="http://classdojo.com">ClassDojo</a>
         </p>
         {/* <SEO title="All posts" />
         {posts.map(({ node }) => {
