@@ -32,8 +32,10 @@ class BlogIndex extends React.Component {
         </p>
         <p>
           Now, I help people out with their projects, and occasionally angel
-          invest. I've worked with Primer, /talk, Slapdash, Roam Research, and
-          others.
+          invest. I've worked with <a href="http://withprimer.com">Primer</a>,{" "}
+          <a href="http://slashtalk.com">/talk</a>,{" "}
+          <a href="http://slapdash.com">Slapdash</a>,{" "}
+          <a href="http://roamresearch.com">Roam Research</a>, and others.
         </p>
         <p>
           <a href="mailto:tay@tay.ro">Email me</a> if you'd like to work
