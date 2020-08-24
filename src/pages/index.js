@@ -27,27 +27,26 @@ class BlogIndex extends React.Component {
         <h1
           style={{
             fontWeight: 900,
-            fontSize: "15em",
+            fontSize: "8em",
             WebkitTextStrokeColor: "black",
             WebkitTextStrokeWidth: "1px",
             color: "white",
-            position: "absolute",
-            top: 0,
-            left: 0,
+            // position: "absolute",
+            // top: 0,
+            // left: 0,
           }}
         >
           Taylor Rogalski
         </h1>
         <div
           style={{
-            position: "absolute",
-            zIndex: 100,
-            top: 200,
-            left: 0,
+            display: "flex",
+            flexDirection: "row",
+            flexWrap: "wrap",
           }}
         >
           <Button url="https://en.wikipedia.org/wiki/Interaction_design">
-            product designer
+            product design
           </Button>
           <Button url="https://en.wikipedia.org/wiki/Intelligence_amplification">
             tools for thought
@@ -56,9 +55,9 @@ class BlogIndex extends React.Component {
             san francisco
           </Button>
           <Button url="https://roamresearch.com">roam research</Button>
-          <Button>google maps for your life</Button>
+          {/* <Button>google maps for your life</Button>
           <Button>game tape for knowledge work</Button>
-          <Button>be your own sludgelord</Button>
+          <Button>be your own sludgelord</Button> */}
           <Button url="https://www.businessinsider.com/elon-musk-ad-astra-classdojo-conundrum-ethics-puzzles-2018-8">
             classdojo conundrums
           </Button>
@@ -71,30 +70,11 @@ class BlogIndex extends React.Component {
           <Button url="https://vimeo.com/57473663">
             facebook graph search
           </Button>
-          <Button url="https://www.cca.edu/design/ixd/">cca ixd dropout</Button>
+          <Button url="https://www.cca.edu/design/ixd/">
+            cca ixd (dropout)
+          </Button>
         </div>
-        <p>
-          <strong>now:</strong>{" "}
-          <a href="https://roamresearch.com">roam research</a>
-        </p>
-        <p>
-          <strong>2019-2020</strong> personal projects and contracts.
-          pioneer.app, slashtalk.com, withprimer.com
-        </p>
-        <p>
-          I also led design at <a href="http://classdojo.com">ClassDojo</a>.
-        </p>
-        <p>
-          Now, I help people out with their projects, and occasionally angel
-          invest. I've worked with <a href="http://withprimer.com">Primer</a>,{" "}
-          <a href="http://slashtalk.com">/talk</a>,{" "}
-          <a href="http://slapdash.com">Slapdash</a>,{" "}
-          <a href="http://roamresearch.com">Roam Research</a>, and others.
-        </p>
-        <p>
-          <a href="mailto:tay@tay.ro">Email me</a> if you'd like to work
-          together!
-        </p>
+
         {/* <SEO title="All posts" />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
