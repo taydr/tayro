@@ -5,6 +5,7 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
+import Button from "../components/biobutton"
 
 class BlogIndex extends React.Component {
   render() {
@@ -12,20 +13,73 @@ class BlogIndex extends React.Component {
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMarkdownRemark.edges
 
+    const buttonClass = {
+      margin: 6,
+      backgroundColor: "transparent",
+      WebkitBoxShadow: "0px 1px black",
+    }
     return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <h2>Taylor Rogalski</h2>
+      <Layout
+        style={{ position: "relative" }}
+        location={this.props.location}
+        title={siteTitle}
+      >
+        <h1
+          style={{
+            fontWeight: 900,
+            fontSize: "15em",
+            WebkitTextStrokeColor: "black",
+            WebkitTextStrokeWidth: "1px",
+            color: "white",
+            position: "absolute",
+            top: 0,
+            left: 0,
+          }}
+        >
+          Taylor Rogalski
+        </h1>
+        <div
+          style={{
+            position: "absolute",
+            zIndex: 100,
+            top: 200,
+            left: 0,
+          }}
+        >
+          <Button url="https://en.wikipedia.org/wiki/Interaction_design">
+            product designer
+          </Button>
+          <Button url="https://en.wikipedia.org/wiki/Intelligence_amplification">
+            tools for thought
+          </Button>
+          <Button url="https://en.wikipedia.org/wiki/San_Francisco">
+            san francisco
+          </Button>
+          <Button url="https://roamresearch.com">roam research</Button>
+          <Button>google maps for your life</Button>
+          <Button>game tape for knowledge work</Button>
+          <Button>be your own sludgelord</Button>
+          <Button url="https://www.businessinsider.com/elon-musk-ad-astra-classdojo-conundrum-ethics-puzzles-2018-8">
+            classdojo conundrums
+          </Button>
+          <Button url="https://twitter.com/search?q=%23omgtoolkit">
+            classdojo toolkit
+          </Button>
+          <Button url="https://www.summitlearning.org/">
+            summit learning plan
+          </Button>
+          <Button url="https://vimeo.com/57473663">
+            facebook graph search
+          </Button>
+          <Button url="https://www.cca.edu/design/ixd/">cca ixd dropout</Button>
+        </div>
         <p>
-          I'm a designer based in San Francisco. I'm interested in how computers
-          can help you think better thoughts and live life more fully.
+          <strong>now:</strong>{" "}
+          <a href="https://roamresearch.com">roam research</a>
         </p>
         <p>
-          I attended <a href="http://cca.edu">CCA</a> to study{" "}
-          <a href="">interaction design</a>, but dropped out in 2013 to work on{" "}
-          <a href="">Graph Search</a> at{" "}
-          <a href="http://facebook.com">Facebook</a>. I also designed early
-          versions of the Summit Learning Plan, which helps students relate
-          their long-term goals to their daily actions.
+          <strong>2019-2020</strong> personal projects and contracts.
+          pioneer.app, slashtalk.com, withprimer.com
         </p>
         <p>
           I also led design at <a href="http://classdojo.com">ClassDojo</a>.
