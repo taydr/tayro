@@ -14,7 +14,7 @@ class Button extends React.Component {
     }
 
     return (
-      <a href={url} style={buttonClass}>
+      <a href={url} target="_new" style={buttonClass}>
         {children}
         {console.log(url)}
       </a>
