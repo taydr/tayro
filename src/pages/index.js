@@ -19,91 +19,24 @@ class BlogIndex extends React.Component {
       WebkitBoxShadow: "0px 1px black",
     }
     return (
-      <Layout
-        style={{ position: "relative" }}
-        location={this.props.location}
-        title={siteTitle}
-      >
-        <h1
-          style={{
-            fontWeight: 900,
-            fontSize: "8em",
-            WebkitTextStrokeColor: "black",
-            WebkitTextStrokeWidth: "1px",
-            color: "white",
-            // position: "absolute",
-            // top: 0,
-            // left: 0,
-          }}
-        >
-          Taylor Rogalski
-        </h1>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            flexWrap: "wrap",
-          }}
-        >
-          <Button url="https://en.wikipedia.org/wiki/Interaction_design">
-            product design
-          </Button>
-          <Button url="https://en.wikipedia.org/wiki/Intelligence_amplification">
-            tools for thought
-          </Button>
-          <Button url="https://en.wikipedia.org/wiki/San_Francisco">
-            san francisco
-          </Button>
-          <Button url="https://archive.house">archive house</Button>
-          <Button url="https://roamresearch.com">roam research</Button>
-          {/* <Button>google maps for your life</Button>
-          <Button>game tape for knowledge work</Button>
-          <Button>be your own sludgelord</Button> */}
-          <Button url="https://www.businessinsider.com/elon-musk-ad-astra-classdojo-conundrum-ethics-puzzles-2018-8">
-            classdojo conundrums
-          </Button>
-          <Button url="https://twitter.com/search?q=%23omgtoolkit">
-            classdojo toolkit
-          </Button>
-          <Button url="https://www.summitlearning.org/">
-            summit learning plan
-          </Button>
-          <Button url="https://vimeo.com/57473663">
-            facebook graph search
-          </Button>
-          <Button url="https://www.cca.edu/design/ixd/">
-            cca ixd (dropout)
-          </Button>
-        </div>
+      <div>
+      <ul>
+      <li><a href="http://worrydream.com/MagicInk">interaction design</a> 
+      </li>
+      <li><a href="https://www.dougengelbart.org/content/view/138">intelligence augmentation</a></li>
+      <li>san francisco + <a href="http://twitter.com/tayroga">twitter</a></li>
+    </ul>
 
-        {/* <SEO title="All posts" />
-        {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
-          return (
-            <article key={node.fields.slug}>
-              <header>
-                <h3
-                  style={{
-                    marginBottom: rhythm(1 / 4),
-                  }}
-                >
-                  <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                    {title}
-                  </Link>
-                </h3>
-                <small>{node.frontmatter.date}</small>
-              </header>
-              <section>
-                <p
-                  dangerouslySetInnerHTML={{
-                    __html: node.frontmatter.description || node.excerpt,
-                  }}
-                />
-              </section>
-            </article>
-          )
-        })} */}
-      </Layout>
+    <ul>
+      <li><a href="http://synthesis.is">synthesis school</a></li>
+      <li><a href="http://roamresearch.com">roam research</a></li>
+      <li><a href="https://www.businessinsider.com/elon-musk-ad-astra-classdojo-conundrum-ethics-puzzles-2018-8">classdojo conundrums</a></li>
+      <li><a href="https://www.classdojo.com/toolkit/">classdojo toolkit</a></li>
+      <li><a href="https://hechingerreport.org/a-personalized-learning-program-with-ties-to-zuckerberg-shows-promise-despite-criticism/">summit learning plan</a></li>
+      <li><a href="https://vimeo.com/57473663">facebook graph search</a></li>
+      <li><a href="https://www.cca.edu/design/ixd/" style="text-decoration: line-through">cca ixd</a></li>
+    </ul>
+      </div>
     )
   }
 }
