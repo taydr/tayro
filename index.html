@@ -5,61 +5,219 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Taylor Rogalski</title>
+        <style>
+                .preview-card {
+                        display: none;
+                        position: absolute;
+                        background: white;
+                        border: 1px solid #ddd;
+                        border-radius: 8px;
+                        padding: 12px;
+                        max-width: 300px;
+                        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                        z-index: 1000;
+                }
+
+                .preview-card img {
+                        max-width: 100%;
+                        height: auto;
+                        margin-bottom: 8px;
+                }
+
+                .preview-card h3 {
+                        margin: 0 0 8px 0;
+                        font-size: 16px;
+                }
+
+                .preview-card p {
+                        margin: 0;
+                        font-size: 14px;
+                        color: #666;
+                }
+        </style>
 </head>
 
 <body>
         <h1>Taylor Rogalski
 
         </h1>
-        <p>I'm a <a href="https://en.wikipedia.org/wiki/Invention">designer</a> in San Francisco, interested in
+        <p>I'm a <a href="https://en.wikipedia.org/wiki/Invention" data-ml-title="Invention - Wikipedia"
+                        data-ml-description="An invention is a unique or novel device, method, composition, idea or process. An invention may be an improvement upon a machine, product, or process for increasing efficiency or lowering cost. It may also be an entirely new concept. If an idea is unique enough either as a stand-alone invention or as a significant improvement over the work of others, it can be patented. A patent, if granted, gives the inventor a proprietary interest in the patent over a specific period of time, which can be licensed for financial gain."
+                        data-ml-image="https://upload.wikimedia.org/wikipedia/commons/a/a0/Science_and_Invention_Nov_1928_Cover_2.jpg">designer</a>
+                in San Francisco, interested in
                 education, games, and
-                <a href="https://wiki.c2.com/?PersonalDynamicMedia">computing as a medium</a>.
+                <a href="https://wiki.c2.com/?PersonalDynamicMedia" data-ml-title="Personal Dynamic Media"
+                        data-ml-description="A term coined by AlanKay to describe a way of using computers. In EarlyHistoryOfSmalltalk, AlanKay explains how after seeing SeymourPapert’s work with LogoLanguage he grew to see personal computing less as a “personal dynamic vehicle” and more as a “personal dynamic medium”. Instead of the computer being primarily used for its capacity to perform computation, what if it were used as a medium for communication? Not just as a way for people to send each other text, or pictures, or sound, but as a way to send each other active, “live” simulations of their ideas?"
+                        data-ml-image="https://c2.com/sig/wiki.gif">computing as a medium</a>.
         </p>
-        <p>You can find me on Twitter <a href="https://twitter.com/tayroga">@tayroga</a>.</p>
+        <p>You can find me on Twitter <a href="https://twitter.com/tayroga" data-ml-title="@tayroga on X"
+                        data-ml-description="minimum viable opus"
+                        data-ml-image="https://pbs.twimg.com/profile_images/1566894467793108992/GL0kxeqi_400x400.jpg">@tayroga</a>.
+        </p>
 
-        <p>I currently work on <a href="https://withpico.com">Pico</a>.</p>
+        <p>I currently work on <a href="https://withpico.com" data-ml-title="Pico"
+                        data-ml-description="Grow your own computer"
+                        data-ml-image="https://framerusercontent.com/images/BnCGs3djPXup9Hdc2GLX0qS4ktw.png">Pico</a>.
+        </p>
 
 
         <p>Previously:</p>
         <ul>
-                <li>Made games and tools at <a href="http://synthesis.is">Synthesis</a></li>
-                <li>Designed an <a
-                                href="https://en.wikipedia.org/wiki/Reinforcement_learning_from_human_feedback">RLHF</a>
+                <li>Made games and tools at <a href="http://synthesis.is" data-ml-title="Synthesis Tutor"
+                                data-ml-description="Master elementary math with tools born out of the SpaceX school. Learning that adapts to your child’s needs. Available on iPad and desktop."
+                                data-ml-image="https://cdn.prod.website-files.com/61254e5d00ea9e494d66b322/66e8600726a4352961b42ae4_opengraph%20%E2%80%94%20tutor.png">Synthesis</a>
+                </li>
+                <li>Designed an <a href="https://en.wikipedia.org/wiki/Reinforcement_learning_from_human_feedback"
+                                data-ml-title="Reinforcement learning from human feedback - Wikipedia"
+                                data-ml-description="In machine learning, reinforcement learning from human feedback (RLHF) is a technique to align an intelligent agent with human preferences. It involves training a reward model to represent preferences, which can then be used to train other models through reinforcement learning."
+                                data-ml-image="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/RLHF_diagram.svg/1200px-RLHF_diagram.svg.png">RLHF</a>
                         tool
-                        used to train <a href="https://claude.ai">Claude</a></li>
-                <li>Designed a mobile app for <a href="https://www.eightsleep.com/">Eight Sleep</a></li>
-                <li>Designed early versions of <a href="http://roamresearch.com">Roam Research</a></li>
-                <li>Lived at <a href="https://archive.house/">The Archive</a>, briefly the greatest place on Earth</li>
+                        used to train <a href="https://claude.ai" data-ml-title="Claude"
+                                data-ml-description="Talk with Claude, an AI assistant from Anthropic"
+                                data-ml-image="https://claude.ai/images/claude_ogimage.png">Claude</a></li>
+
+                <li>Designed early versions of <a href="http://roamresearch.com"
+                                data-ml-title="Roam Research – A note taking tool for networked thought."
+                                data-ml-description="As easy to use as a word document or bulleted list, and as powerful for finding, collecting, and connecting related ideas as a graph database. Collaborate with others in real time, or store all your data locally."
+                                data-ml-image="https://roamresearch.com/assets/astro.png">Roam Research</a></li>
+                <li>Lived at <a href="https://archive.house/" data-ml-title="The Archive"
+                                data-ml-description="We value curiosity, reliability, intentionality, and benevolence; we believe that a community that cares for and empowers each other is key to a fulfilling and impactful life."
+                                data-ml-image="https://archive.house/archive1.jpg">The Archive</a>, briefly the greatest
+                        place on Earth</li>
                 <li>Tried to find "lost Einsteins" at <a
-                                href="https://www.nytimes.com/2018/08/09/technology/talent-opportunity-gap-pioneer-fund.html">Pioneer</a>
+                                href="https://www.nytimes.com/2018/08/09/technology/talent-opportunity-gap-pioneer-fund.html"
+                                data-ml-title="Wanted: ‘Lost Einsteins.’ Please Apply. (Published 2018)"
+                                data-ml-description="Pioneer, an experimental fund, is using the Silicon Valley model to find and nurture people who have talent but lack opportunity."
+                                data-ml-image="https://static01.nyt.com/images/2018/08/10/business/10-PIONEERFUND/PIONEERFUND-facebookJumbo.jpg?year=2018href="
+                                https://www.nytimes.com/2018/08/09/technology/talent-opportunity-gap-pioneer-fund.html"h=550href="https://www.nytimes.com/2018/08/09/technology/talent-opportunity-gap-pioneer-fund.html"
+                                w=1050href="https://www.nytimes.com/2018/08/09/technology/talent-opportunity-gap-pioneer-fund.html"
+                                s=b0841d8d50848eb45e7d99a492f394f45873a4d4bd92fc7929d9d307f8820259href="https://www.nytimes.com/2018/08/09/technology/talent-opportunity-gap-pioneer-fund.html"
+                                k=ZQJBKqZ0VN">Pioneer</a>
                 </li>
                 <li>Redesigned Strava <a
-                                href="https://docs.google.com/presentation/d/17N54bXFFIfSXgpuJ9ZcOWp_K0sWPxwihCt5WJExH2jA/edit?usp=sharing">in
+                                href="https://docs.google.com/presentation/d/17N54bXFFIfSXgpuJ9ZcOWp_K0sWPxwihCt5WJExH2jA/edit?usp=sharing"
+                                data-ml-title="Strava Challenge (Taylor Rogalski, Feb 2019)"
+                                data-ml-description="Strava Challenge (Taylor Rogalski, Feb 2019)"
+                                data-ml-image="https://lh7-us.googleusercontent.com/docs/AHkbwyIzB0OIK6F-W_8Hipk0rv9SUu43E71OMH7cbL3rsTI9rJrqTE4MU-9yhYfEUs-zAuIbRwyBrfTRwgNzmOb2WJCOiNMY-kYIUEKb1XXmsttoAH82AwU=w1200-h630-p">in
                                 48 hours</a> as an exercise</li>
-                <li>Launched <a
-                                href="https://www.businessinsider.com/elon-musk-ad-astra-classdojo-conundrum-ethics-puzzles-2018-8">Conundrums</a>
-                        with <a href="https://en.wikipedia.org/wiki/Astra_Nova_School">Ad Astra School</a></li>
-                <li>Launched <a href="https://www.classdojo.com/toolkit/">ClassDojo Toolkit</a>, which <a
-                                href="https://twitter.com/search?q=%23omgtoolkit">some teachers like</a></li>
-                <li>Worked with <a href="https://www.summitlearning.org/">Summit Learning</a> at <a
-                                href="https://hechingerreport.org/a-personalized-learning-program-with-ties-to-zuckerberg-shows-promise-despite-criticism/">Facebook
+                <li>Launched <a href="https://www.businessinsider.com/elon-musk-ad-astra-classdojo-conundrum-ethics-puzzles-2018-8"
+                                data-ml-title="Elon Musk’s secretive LA private school doesn’t just teach spelling and math — it also asks students ethics and critical thinking puzzles you usually don’t see elsewhere"
+                                data-ml-description="Elon Musk’s Ad Astra School and educational software developer ClassDojo are introducing a set of “Conundrums” for elementary and middle school students that introduce several interesting ethical and critical thinking problems."
+                                data-ml-image="https://i.insider.com/5b841c582154a321008b551f?width=1200href="
+                                https://www.businessinsider.com/elon-musk-ad-astra-classdojo-conundrum-ethics-puzzles-2018-8"format=jpeg">Conundrums</a>
+                        with <a href="https://en.wikipedia.org/wiki/Astra_Nova_School"
+                                data-ml-title="Astra Nova School - Wikipedia"
+                                data-ml-description="Astra Nova School, successor to Ad Astra, is a non-profit online school founded by Elon Musk and Joshua Dahn on the campus of SpaceX. The Washington Post said it was possibly “the most exclusive school in the world”.[1]"
+                                data-ml-image="https://en.m.wikipedia.org/static/images/mobile/copyright/wikipedia-wordmark-en.svg">Ad
+                                Astra School</a></li>
+
+                <li>Launched <a href="https://classdojo.com/toolkit">ClassDojo Toolkit</a>, which <a
+                                href="https://twitter.com/search?q=%23omgtoolkit">some teachers like</a> </li>
+                <li>Worked with <a href="https://www.summitps.org/">Summit Learning</a> at <a
+                                href="https://hechingerreport.org/a-personalized-learning-program-with-ties-to-zuckerberg-shows-promise-despite-criticism/"
+                                data-ml-title="Summit Learning shows promise for personalized learning despite criticism"
+                                data-ml-description="Nearly 400 schools use Summit Learning to personalize learning for students but there has been criticism over its ties to Zuckerberg and screen time."
+                                data-ml-image="https://i1.wp.com/hechingerreport.org/wp-content/uploads/2020/12/Tara-Garcia-Mathewson-SummitImplementation4-e1580945669675.jpg?fit=2000%2C1333href="
+                                https://hechingerreport.org/a-personalized-learning-program-with-ties-to-zuckerberg-shows-promise-despite-criticism/"ssl=1">Facebook
                                 K12</a></li>
                 <li>Designed search
-                        on <a href="https://play.google.com/store/apps/details?id=com.facebook.katana&hl=en_US">Facebook
+                        on <a href="https://play.google.com/store/apps/details?id=com.facebook.katanahref="
+                                https://play.google.com/store/apps/details?id=com.facebook.katana&hl=en_US"hl=en_US"
+                                data-ml-title="Facebook - Apps on Google Play"
+                                data-ml-description="Explore the things you love"
+                                data-ml-image="https://play-lh.googleusercontent.com/KCMTYuiTrKom4Vyf0G4foetVOwhKWzNbHWumV73IXexAIy5TTgZipL52WTt8ICL-oIo">Facebook
                                 for
                                 Android</a></li>
-                <li>Dropped out to work on <a href="https://vimeo.com/57473663">Graph Search</a></li>
-                <li>Studied <a href="https://en.wikipedia.org/wiki/Industrial_design">industrial</a> and <a
-                                href="https://en.wikipedia.org/wiki/Interaction_design">interaction</a> design at <a
-                                href="https://www.cca.edu/">CCA</a></li>
-                <li>Ran a mildly successful <a href="https://en.wikipedia.org/wiki/World_of_Warcraft">World of
-                                Warcraft</a> <a href="https://en.wikipedia.org/wiki/Video_game_bot">bot</a> <a
-                                href="https://en.wikipedia.org/wiki/Video_game_bot">farm</a>.</li>
+                <li>Dropped out to work on <a href="https://vimeo.com/57473663" data-ml-title="Facebook Graph Search"
+                                data-ml-description="This is href=" https://vimeo.com/57473663"quot;Facebook Graph
+                                Searchhref="https://vimeo.com/57473663" quot; by Peter Jordan on Vimeo, the home for
+                                high quality videos and the people who love them."
+                                data-ml-image="https://i.vimeocdn.com/video/411343981-6e726a7b021c8d736bfa363d3dcb4b1eb17d3766abd96f6c9c917b9fe548f40d-d?f=webp">Graph
+                                Search</a></li>
+                <li>Studied <a href="https://en.wikipedia.org/wiki/Industrial_design"
+                                data-ml-title="Industrial design - Wikipedia"
+                                data-ml-description="Industrial design is a process of design applied to physical products that are to be manufactured by mass production.[1][2] It is the creative act of determining and defining a product’s form and features, which takes place in advance of the manufacture or production of the product. Industrial manufacture consists of predetermined, standardized and repeated, often automated, acts of replication,[3][4] while craft-based design is a process or approach in which the form of the product is determined personally by the product’s creator largely concurrent with the act of its production.[5]"
+                                data-ml-image="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Olivetti-mc24-marcello-nizzoli.jpg/1200px-Olivetti-mc24-marcello-nizzoli.jpg">industrial</a>
+                        and <a href="https://en.wikipedia.org/wiki/Interaction_design"
+                                data-ml-title="Interaction design - Wikipedia"
+                                data-ml-description="From Wikipedia, the free encyclopedia"
+                                data-ml-image="https://en.wikipedia.org/static/images/mobile/copyright/wikipedia-wordmark-en.svg">interaction</a>
+                        design at <a href="https://www.cca.edu/" data-ml-title="Homepage"
+                                data-ml-description="CCA is the action-oriented art and design school in San Francisco. Since 1907, our students have shaped the world through architecture, art, design, and writing."
+                                data-ml-image="https://media.cca.edu/images/admissions-campus-2024-hero-001.width-1000.jpg">CCA</a>
+                </li>
+                <li>Ran a mildly successful <a href="https://en.wikipedia.org/wiki/World_of_Warcraft"
+                                data-ml-title="World of Warcraft - Wikipedia"
+                                data-ml-description="“WoW” redirects here. For other uses, see Wow."
+                                data-ml-image="https://upload.wikimedia.org/wikipedia/en/6/65/World_of_Warcraft.png">World
+                                of
+                                Warcraft</a> <a href="https://en.wikipedia.org/wiki/Video_game_bot"
+                                data-ml-title="Video game bot - Wikipedia"
+                                data-ml-description="From Wikipedia, the free encyclopedia"
+                                data-ml-image="https://upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png">bot</a>
+                        <a href="https://en.wikipedia.org/wiki/Video_game_bot"
+                                data-ml-title="Video game bot - Wikipedia"
+                                data-ml-description="From Wikipedia, the free encyclopedia"
+                                data-ml-image="https://upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png">farm</a>.
+                </li>
                 <li>Screen-printed over 1,000 t-shirts</li>
-                <li>Was on a <a
-                                href="https://www.youtube.com/watch?v=Dfmhpl5ANMc&t=1127s&pp=ygUVd29ybGRzIGFwYXJ0IG1hbGF5c2lh">reality
+                <li>Was on a <a href="https://www.youtube.com/watch?v=Dfmhpl5ANMchref="
+                                https://www.youtube.com/watch?v=Dfmhpl5ANMc&t=1127s&pp=ygUVd29ybGRzIGFwYXJ0IG1hbGF5c2lh"t=1127shref="https://www.youtube.com/watch?v=Dfmhpl5ANMc&t=1127s&pp=ygUVd29ybGRzIGFwYXJ0IG1hbGF5c2lh"
+                                pp=ygUVd29ybGRzIGFwYXJ0IG1hbGF5c2lh" data-ml-title="Worlds Apart Malaysia"
+                                data-ml-image="https://i.ytimg.com/vi/Dfmhpl5ANMc/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AHeAoAChgKKAgwIABABGGUgUChJMA8=href="
+                                https://www.youtube.com/watch?v=Dfmhpl5ANMc&t=1127s&pp=ygUVd29ybGRzIGFwYXJ0IG1hbGF5c2lh"rs=AOn4CLC9-ehV9X25aDgwgmZLXCd-ddoNgg">reality
                                 television show</a></li>
         </ul>
-</body>
 
-</html>
+        <div id="preview-container"></div>
+
+        <script>
+                const previewContainer = document.getElementById('preview-container');
+                let currentPreview = null;
+                let previewTimeout = null;
+
+                document.querySelectorAll('a').forEach(link => {
+                        link.addEventListener('mouseenter', (e) => {
+                                if (previewTimeout) clearTimeout(previewTimeout);
+
+                                previewTimeout = setTimeout(() => {
+                                        const title = e.target.dataset.mlTitle;
+                                        const description = e.target.dataset.mlDescription;
+                                        const imageUrl = e.target.dataset.mlImage;
+
+                                        if (title) {
+                                                const previewCard = document.createElement('div');
+                                                previewCard.className = 'preview-card';
+                                                previewCard.innerHTML = `
+                                                        ${imageUrl ? `<img src="${imageUrl}" alt="${title}" />` : ''}
+                                                        <h3>${title}</h3>
+                                                        ${description ? `<p>${description}</p>` : ''}
+                                                `;
+
+                                                const rect = e.target.getBoundingClientRect();
+                                                previewCard.style.left = `${rect.left + window.scrollX}px`;
+                                                previewCard.style.top = `${rect.bottom + window.scrollY + 10}px`;
+
+                                                if (currentPreview) currentPreview.remove();
+                                                previewContainer.appendChild(previewCard);
+                                                currentPreview = previewCard;
+
+                                                setTimeout(() => {
+                                                        previewCard.style.display = 'block';
+                                                }, 50);
+                                        }
+                                }, 200);
+                        });
+
+                        link.addEventListener('mouseleave', () => {
+                                if (previewTimeout) clearTimeout(previewTimeout);
+                                setTimeout(() => {
+                                        if (currentPreview) {
+                                                currentPreview.remove();
+                                                currentPreview = null;
+                                        }
+                                }, 100);
+                        });
+                });
+        </script>
+</body>
