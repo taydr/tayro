@@ -5,6 +5,20 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Taylor Rogalski</title>
+        <script>
+                // Remove the service worker and caches left by the previous Gatsby site.
+                if ('serviceWorker' in navigator) {
+                        window.addEventListener('load', async () => {
+                                const registrations = await navigator.serviceWorker.getRegistrations();
+                                await Promise.all(registrations.map(registration => registration.unregister()));
+
+                                if ('caches' in window) {
+                                        const cacheNames = await caches.keys();
+                                        await Promise.all(cacheNames.map(cacheName => caches.delete(cacheName)));
+                                }
+                        });
+                }
+        </script>
         <style>
                 .preview-card {
                         display: none;
